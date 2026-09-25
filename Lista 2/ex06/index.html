@@ -1,0 +1,29 @@
+<!-- Exercício 6 — Simulador de desconto
+Desenvolva um simulador de desconto para uma loja.
+Requisitos:
+ Informar valor da compra e percentual de desconto;
+ Calcular valor descontado e valor final;
+ Aplicar regras extras (compras acima de R$ 500 recebem desconto
+adicional; descontos acima de 50% não são permitidos);
+ Exibir o resumo da compra na tela.
+ -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulador de Desconto</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simulador de Desconto</h1>
+      <input type="number" id="valorCompra" placeholder="Valor da compra" />
+      <input type="number" id="desconto" placeholder="Desconto (%)" />
+      <button id="calcular">Calcular</button>
+      <div id="resultado"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

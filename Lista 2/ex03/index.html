@@ -1,0 +1,89 @@
+<!-- Exercício 3 — Landing page de um curso
+Construa uma página de divulgação de um curso de tecnologia.
+Requisitos:
+ Banner principal com chamada para inscrição;
+ Seção com benefícios do curso;
+ Seção com depoimentos fictícios;
+ Botão de chamada para ação (“Inscreva-se”);
+ Uso de Flexbox ou CSS Grid para estruturar o layout -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curso de Desenvolvimento Web</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>DevStart</h1>
+      <nav>
+        <a href="#beneficios">Benefícios</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#inscricao">Inscrição</a>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <div>
+          <h2>Aprenda Desenvolvimento Web do Zero</h2>
+          <p>
+            Aprenda HTML, CSS e JavaScript e comece sua jornada no
+            desenvolvimento de sites e aplicações web.
+          </p>
+          <a href="#inscricao" class="botao">Inscreva-se</a>
+        </div>
+      </section>
+      <section id="beneficios">
+        <h2>Benefícios do curso</h2>
+        <div class="beneficios">
+          <div class="beneficio">
+            <h3>Aprendizado prático</h3>
+            <p>Aprenda criando projetos reais durante o curso.</p>
+          </div>
+          <div class="beneficio">
+            <h3>Do básico ao avançado</h3>
+            <p>Conteúdo organizado para quem está começando.</p>
+          </div>
+          <div class="beneficio">
+            <h3>Projetos para portfólio</h3>
+            <p>Desenvolva projetos para mostrar suas habilidades.</p>
+          </div>
+        </div>
+      </section>
+      <section id="depoimentos">
+        <h2>Depoimentos</h2>
+        <div class="depoimentos">
+          <div class="depoimento">
+            <p>
+              "O curso me ajudou a entender programação de uma forma muito mais
+              simples."
+            </p>
+            <strong>— Lucas Almeida</strong>
+          </div>
+          <div class="depoimento">
+            <p>
+              "Gostei muito da parte prática. Consegui criar meus primeiros
+              projetos."
+            </p>
+            <strong>— Marina Souza</strong>
+          </div>
+          <div class="depoimento">
+            <p>
+              "Depois do curso comecei a estudar desenvolvimento web com muito
+              mais confiança."
+            </p>
+            <strong>— Pedro Henrique</strong>
+          </div>
+        </div>
+      </section>
+      <section id="inscricao" class="inscricao">
+        <h2>Pronto para começar?</h2>
+        <p>Faça sua inscrição e comece a aprender desenvolvimento web.</p>
+        <button>Inscreva-se</button>
+      </section>
+    </main>
+    <footer><p>© 2026 DevStart</p></footer>
+  </body>
+</html>

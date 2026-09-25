@@ -1,0 +1,37 @@
+<!-- Exercício 9 — Agenda de contatos
+Desenvolva uma agenda de contatos.
+Requisitos:
+ Criar objetos com nome, telefone e email;
+ Armazenar os contatos em um array;
+ Adicionar novos contatos pelo formulário;
+ Pesquisar contatos pelo nome;
+ Listar todos os contatos cadastrados;
+ Validar se os campos obrigatórios foram preenchidos -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Agenda de Contatos</h1>
+      <form id="formContato">
+        <input type="text" id="nome" placeholder="Nome" />
+        <input type="tel" id="telefone" placeholder="Telefone" />
+        <input type="email" id="email" placeholder="E-mail" />
+        <button type="submit">Adicionar contato</button>
+      </form>
+      <p id="mensagem"></p>
+      <div class="pesquisa">
+        <input type="text" id="pesquisa" placeholder="Pesquisar por nome" />
+      </div>
+      <h2>Contatos</h2>
+      <div id="contatos"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!-- Exercício 7 — Catálogo de filmes com arrays
+Crie um catálogo de filmes usando um array.
+Requisitos:
+ Armazenar pelo menos cinco títulos em um array;
+ Exibir a lista na página;
+ Permitir pesquisar um filme pelo nome;
+ Informar quando o filme não estiver cadastrado;
+ Usar métodos de array, como push(), includes(), filter() ou find().
+ -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Filmes</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Catálogo de Filmes</h1>
+      <div class="pesquisa">
+        <input
+          type="text"
+          id="filmeInput"
+          placeholder="Digite o nome do filme"
+        />
+        <button id="pesquisar">Pesquisar</button>
+      </div>
+      <p id="resultado"></p>
+      <h2>Filmes cadastrados</h2>
+      <ul id="filmes"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!-- Exercício 5 — Verificador de faixa etária
+Faça uma aplicação que receba o ano de nascimento do usuário e informe
+sua idade aproximada.
+Requisitos:
+ Obter o ano atual usando JavaScript;
+ Calcular a idade;
+ Informar uma classificação: Criança, Adolescente, Adulto ou Idoso;
+ Exibir uma mensagem adequada no HTML. -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de Faixa Etária</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Verificador de Faixa Etária</h1>
+      <input
+        type="number"
+        id="anoNascimento"
+        placeholder="Digite seu ano de nascimento"
+      />
+      <button id="verificar">Verificar</button>
+      <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

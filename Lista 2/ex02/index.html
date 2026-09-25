@@ -1,0 +1,83 @@
+<!-- Exercício 2 — Página de cardápio
+Crie uma página para o cardápio de uma lanchonete ou restaurante.
+Requisitos:
+ Pelo menos três categorias: lanches, bebidas e sobremesas;
+ Uso de listas ordenadas ou não ordenadas;
+ Tabela com nome, descrição e preço dos produtos;
+ Aplicar cores, fontes, espaçamentos e bordas com CSS -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hamburgueria do João</h1>
+        <p>Confira nosso cardápio</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Lanches</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>X-Burger</td>
+                        <td>Pão, hambúrguer, queijo e molho especial.</td>
+                        <td>R$ 18,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>X-Salada</td>
+                        <td>Hambúrguer, queijo, alface, tomate e molho.</td>
+                        <td>R$ 22,00</td>
+                    </tr>
+
+                    <tr>
+                        <td>Duplo Bacon</td>
+                        <td>Dois hambúrgueres, queijo e bacon crocante.</td>
+                        <td>R$ 28,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Bebidas</h2>
+
+            <ul>
+                <li>Refrigerante — R$ 6,00</li>
+                <li>Suco natural — R$ 8,00</li>
+                <li>Água — R$ 4,00</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Sobremesas</h2>
+
+            <ul>
+                <li>Brownie — R$ 10,00</li>
+                <li>Sorvete — R$ 8,00</li>
+                <li>Milk-shake — R$ 14,00</li>
+            </ul>
+        </section>
+
+    </main>
+
+</body>
+</html>

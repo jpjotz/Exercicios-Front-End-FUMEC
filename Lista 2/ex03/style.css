@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background-color: #f5f5f5;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #151515;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    min-height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 8%;
+    text-align: center;
+    background-color: #2424a8;
+    color: white;
+}
+
+.banner div {
+    max-width: 700px;
+}
+
+.banner h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.botao,
+.inscricao button {
+    display: inline-block;
+    padding: 14px 25px;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffb703;
+    color: #222;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.botao:hover,
+.inscricao button:hover {
+    background-color: #ffd166;
+}
+
+section:not(.banner) {
+    padding: 60px 8%;
+}
+
+section>h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.beneficios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.beneficio {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.depoimentos {
+    display: flex;
+    gap: 20px;
+}
+
+.depoimento {
+    flex: 1;
+    padding: 25px;
+    background-color: white;
+    border-left: 4px solid #2424a8;
+    border-radius: 6px;
+}
+
+.inscricao {
+    text-align: center;
+    background-color: #e9e9ff;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #151515;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .banner h2 {
+        font-size: 32px;
+    }
+
+    .beneficios {
+        grid-template-columns: 1fr;
+    }
+
+    .depoimentos {
+        flex-direction: column;
+    }
+}

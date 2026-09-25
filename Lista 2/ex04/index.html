@@ -1,0 +1,42 @@
+<!-- Exercício 4 — Conversor de temperatura
+Crie um conversor de temperatura entre Celsius e Fahrenheit.
+Requisitos:
+ Campo numérico para a temperatura;
+ Seleção da escala de origem e destino;
+ Botão para realizar a conversão;
+ Exibir o resultado dinamicamente na página;
+ Validar campos vazios ou valores inválidos. -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Conversor de Temperatura</h1>
+      <input
+        type="number"
+        id="temperatura"
+        placeholder="Digite a temperatura"
+      />
+      <div class="escalas">
+        <select id="origem">
+          <option value="C">Celsius</option>
+          <option value="F">Fahrenheit</option>
+        </select>
+        <span>→</span>
+        <select id="destino">
+          <option value="F">Fahrenheit</option>
+          <option value="C">Celsius</option>
+        </select>
+      </div>
+      <button id="converter">Converter</button>
+      <p id="resultado"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

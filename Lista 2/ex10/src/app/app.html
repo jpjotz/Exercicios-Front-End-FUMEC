@@ -1,0 +1,16 @@
+<div class="container">
+
+  <h1>Produtos</h1>
+
+  <div class="produtos">
+
+    @for (produto of produtos; track produto.nome) {
+      <app-produto-card
+        [produto]="produto"
+        (adicionar)="adicionarAoCarrinho($event)"
+      />
+    }
+
+  </div>
+
+</div>
