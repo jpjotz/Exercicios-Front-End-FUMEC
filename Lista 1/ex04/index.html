@@ -1,0 +1,30 @@
+<!-- Exercício 4 — Tabuada interativa
+Crie uma página capaz de gerar a tabuada de um número informado.
+Requisitos:
+ Campo para entrada de um número;
+ Botão “Gerar tabuada”;
+ Usar laço for para gerar os cálculos de 1 a 10;
+ Mostrar os resultados dinamicamente no documento;
+ Criar um botão para limpar a tabuada. -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 4</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Tabuada interativa</h1>
+
+    <input type="number" placeholder="Digite um número" id="numero" />
+    <div id="botoes">
+      <button id="enviar">Enviar</button>
+      <button id="limpar">Limpar</button>
+    </div>
+
+    <div id="tabuada"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!-- Exercício 6 — Cadastro de produtos com objetos
+Modele produtos de uma loja utilizando objetos JavaScript.
+Requisitos:
+ Cada produto deve ter: nome, preco, categoria e estoque;
+ Criar um array com pelo menos cinco produtos;
+ Exibir todos os produtos na tela;
+ Mostrar apenas produtos de uma categoria selecionada;
+ Informar quais produtos estão sem estoque. -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 06</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Cadastro de produtos</h1>
+    <div class="filtros">
+      <select id="categoria">
+        <option value="todos">Todas as categorias</option>
+        <option value="Eletrônicos">Eletrônicos</option>
+        <option value="Roupas">Roupas</option>
+        <option value="Alimentos">Alimentos</option>
+      </select>
+      <button id="filtrar">Filtrar</button>
+      <button id="mostrarTodos">Mostrar todos</button>
+    </div>
+    <div id="produtos"></div>
+    <h2>Produtos sem estoque</h2>
+    <div id="semEstoque"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

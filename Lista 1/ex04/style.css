@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+}
+
+#tabuada div {
+    display: flex;
+    gap: 30px;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input {
+    padding: 15px;
+    text-align: center;
+    max-width: 10%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin-bottom: 15px;
+}
+
+#enviar {
+    background-color: rgb(167, 254, 167);
+    color: green;
+}
+
+#limpar {
+    background-color: rgb(255, 203, 203);
+    color: red;
+}

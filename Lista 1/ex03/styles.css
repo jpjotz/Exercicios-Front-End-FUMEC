@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    transform: scale(1.1);
+}
+
+input, button {
+    border-radius: 10px;
+    border: 1px solid gray;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    background-color: green;
+    color: white;
+}
+
+#mensagem {
+    font-weight: bold;
+    font-size: 16px;
+}

@@ -1,0 +1,45 @@
+<div class="container">
+
+  <h1>Lista de Tarefas</h1>
+
+  <div class="adicionar">
+    <input
+      type="text"
+      [(ngModel)]="novaTarefa"
+      placeholder="Digite uma tarefa"
+    >
+
+    <button (click)="adicionarTarefa()">Adicionar</button>
+  </div>
+
+  <div class="tarefas">
+
+    @for (tarefa of tarefas; track $index) {
+      <div class="tarefa">
+
+        <span [class.concluida]="tarefa.concluida">
+          {{ tarefa.descricao }}
+        </span>
+
+        <button (click)="concluirTarefa(tarefa)">
+          @if (tarefa.concluida) {
+            Desmarcar
+          } @else {
+            Concluir
+          }
+        </button>
+
+        <button (click)="removerTarefa($index)">
+          Excluir
+        </button>
+
+      </div>
+    }
+
+    @if (tarefas.length === 0) {
+      <p>Nenhuma tarefa cadastrada.</p>
+    }
+
+  </div>
+
+</div>

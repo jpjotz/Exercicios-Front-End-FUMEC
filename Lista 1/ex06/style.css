@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.filtros {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+select,
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+button {
+    cursor: pointer;
+}
+
+#produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.produto {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+}
+
+.produto p {
+    margin: 5px 0;
+}
+
+.semEstoque {
+    color: red;
+}

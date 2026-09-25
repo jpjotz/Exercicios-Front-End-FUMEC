@@ -1,0 +1,31 @@
+<!-- Exercício 3 — Calculadora de média escolar
+Desenvolva uma página que receba duas ou três notas e calcule a média do
+aluno.
+Requisitos:
+ Capturar valores a partir de campos HTML;
+ Utilizar variáveis e operadores aritméticos;
+ Exibir média e situação: Aprovado, Recuperação ou Reprovado;
+ Usar estruturas condicionais if, else if e else. -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercicio 3</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <input type="number" id="nota1" placeholder="Digite a nota 1" />
+      <input type="number" id="nota2" placeholder="Digite a nota 2" />
+      <input type="number" id="nota3" placeholder="Digite a nota 3" />
+
+      <button onclick="enviar()">Enviar</button>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <script src="script.js"></script>
+  </body>
+</html>

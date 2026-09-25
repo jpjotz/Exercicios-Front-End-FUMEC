@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 25px;
+}
+
+#produtos,
+#semEstoque {
+    width: 350px;
+}
+
+.produto {
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.produto p {
+    margin: 5px 0;
+}

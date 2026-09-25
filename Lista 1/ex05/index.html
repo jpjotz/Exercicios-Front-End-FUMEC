@@ -1,0 +1,30 @@
+<!-- Exercício 5 — Lista de tarefas
+Desenvolva uma lista de tarefas simples.
+Requisitos:
+ Campo de texto para cadastrar uma tarefa;
+ Botão para adicionar o item a um array;
+ Exibir as tarefas em uma lista HTML;
+ Permitir remover uma tarefa;
+ Usar funções para organizar as operações, como adicionarTarefa(),
+listarTarefas() e removerTarefa(). -->
+
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 05</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Lista de tarefas</h1>
+    <div class="adicionarCampo">
+      <input type="text" id="tarefa" placeholder="Digite uma nova tarefa..." />
+      <button id="adicionar">Adicionar</button>
+    </div>
+
+    <div id="tarefas"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
